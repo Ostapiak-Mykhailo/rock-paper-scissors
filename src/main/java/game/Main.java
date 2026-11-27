@@ -6,7 +6,8 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        GameController controller = new GameController();
+        ConsoleReader reader = new ConsoleReader();
+        GameController controller = new GameController(reader);
         controller.runApp();
     }
 }
